@@ -10,7 +10,7 @@ def on_connect(client, userdata, flags, rc):
     print("Connected with result code "+str(rc))
 
 def on_subscribe(client, userdata, mid, granted_qos):
-    print('subsribed')
+    print('subscribed')
 
 def on_message(client, userdata, message):
     print(f'{userdata}: {message.payload}')
